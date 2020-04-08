@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My profile</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Profile Page">
+    <meta name="keywords" content="HTML,CSS,Profile,Computer Science,Le Wagon,Web Dev">
+    <meta name="author" content="Khalil Zaoui">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">    
+    <script src="https://kit.fontawesome.com/420930a21e.js" crossorigin="anonymous"></script>
+
+
+
+  <body>
+    <div class="container">
+      <div class="card-white" id="introduction">
+        <h1>Hello <span class="anintro"></span> 😃</h1><br>
+        <h1>I'm Khalil</h1><br><br>
+        <img src="images/profile-picture.jpg" class="img-circle" width="100px" alt="Khalil Zaoui">
+        <p>
+          I am a student
+          <a class="lien-edhec" href="https://www.edhec.edu/en" target="_blank">@EDHEC Business School</a>
+          🏫, I love learning new stuff and I am big fan of Computer Science💻. I use Python🐍 and Scilab <img class="intro-icon" src="images/scilab.png">
+          but also SQL <img class="intro-icon" src="images/sql.png">
+          , and I intend to learn <img class="intro-icon" src="images/c.png"> as purists say it is the Father of Modern Programation languages.
+        </p>
+        <button href="#" class="btn-blue"><a class="button-random" href="javascript:openSite()">Discover a random interest about me</a>
+          <script>
+          var links = [
+                        "amc.com/shows/the-walking-dead",
+                        "fox.com/prison-break/",
+                        "adultswim.com/videos/rick-and-morty",
+                        "uefa.com/uefachampionsleague/",
+                        "python.org/",
+                        "stackoverflow.com",
+                        ]
+          
+                     var openSite = function() {
+                        var randIdx = Math.random() * links.length;
+                        randIdx = parseInt(randIdx, 10);
+                        var link = 'http://' + links[randIdx];
+          
+               var win = window.open(link, '_blank');
+               win.focus();
+          
+              };
+          </script></button>
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="card-white">
+        <h2>Sports ⚽</h2>
+        <p>
+          I really love <strong> Football</strong>. I play it and watch it a lot.
+        </p>
+      </div>
+
+      <div class="card-white">
+        <h2>Films and Series 🎦</h2>
+        <p>
+          I watch  <strong>Films and Series</strong> very often. My favourites are <strong>Prison Break</strong><br> and <strong>Leon: The professional</strong>.
+        </p>
+      </div>
+
+      <div class="card-white">
+        <h2>Cars 🚗</h2>
+        <p>
+          I am passionate about <strong>Cars</strong>. I love <strong>Muscle Cars</strong> but also <strong>Sport Sedans</strong>.<br>
+          But I think the future is for <strong>Electric</strong> Sports Cars.
+        </p>
+      </div>
+
+      <div class="card-white">
+        <h2>My Social Media</h2>
+        <ul class="list-inline">
+          <li>
+            <a href="https://www.facebook.com/khalil.zaoui.3" target="_blank">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Khalil94232107" target="_blank">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/khalil-zaoui" target="_blank">
+              <i class="fab fa-github-square"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+  </body>
+
+</html>
